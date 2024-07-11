@@ -1,0 +1,12 @@
+.tree-select-cascader-style {
+  width: 100%;
+  .ant-select-item {
+    background-color: transparent !important;
+    padding: 5px 3px;
+
+    .ant-select-item-option-content {
+      height: 240px !important;
+      overflow-y: auto;
+    }
+  }
+}

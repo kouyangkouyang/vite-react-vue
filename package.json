@@ -17,6 +17,7 @@
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.20.1",
     "redux": "^5.0.0",
+    "sass": "^1.75.0",
     "vue": "^2.7.15",
     "vuereact-combined": "^1.2.11"
   },
