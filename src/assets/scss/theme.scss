@@ -1,0 +1,86 @@
+@font-face {
+  font-family: alibabaPuHui35;
+  src: url('@/assets/font/PuHui/AlibabaPuHuiTi-2-35-Thin.ttf');
+}
+@font-face {
+  font-family: alibabaPuHui45;
+  src: url('@/assets/font/PuHui/AlibabaPuHuiTi-2-45-Light.ttf');
+}
+@font-face {
+  font-family: alibabaPuHui55;
+  src: url('@/assets/font/PuHui/AlibabaPuHuiTi-2-55-Regular.ttf');
+}
+@font-face {
+  font-family: alibabaPuHui65;
+  src: url('@/assets/font/PuHui/AlibabaPuHuiTi-2-65-Medium.ttf');
+}
+@font-face {
+  font-family: alibabaPuHui75;
+  src: url('@/assets/font/PuHui/AlibabaPuHuiTi-2-75-SemiBold.ttf');
+}
+@font-face {
+  font-family: alibabaPuHui85;
+  src: url('@/assets/font/PuHui/AlibabaPuHuiTi-2-85-Bold.ttf');
+}
+@font-face {
+  font-family: alibabaPuHui95;
+  src: url('@/assets/font/PuHui/AlibabaPuHuiTi-2-95-ExtraBold.ttf');
+}
+@font-face {
+  font-family: alibabaPuHui105;
+  src: url('@/assets/font/PuHui/AlibabaPuHuiTi-2-105-Heavy.ttf');
+}
+@font-face {
+  font-family: alibabaPuHui115;
+  src: url('@/assets/font/PuHui/AlibabaPuHuiTi-2-115-Black.ttf');
+}
+
+body {
+  &.theme-light {
+    --header-bg: #ffffff;
+    --header-shadow: 0px 6px 18px 0px rgba(113, 117, 137, 0.15);
+    --header-text-color: #364453;
+    --skin-bg-color: #2d53e8;
+
+    --menu-bg: #ffffff;
+    --menu-header-bg: #1d53d9;
+    --menu-active-bg: rgba(29, 83, 217, 0.1);
+    --menu-active-text-color: #1d53d9;
+    --menu-text-color: #696969;
+
+    --layout-bg: #f7f8fc;
+    --cc-body-bg: #ffffff;
+    --cc-body-border: #f0f0f0;
+    --table-header-bg: #f8f8f8;
+    --table-bg: #ffffff;
+    --table-hover-bg: rgba(243, 246, 255);
+    --table-border-color: #f2f2f2;
+    --pagination-bg: #ffffff;
+    --scroll-color: rgba(0, 0, 0, 0.25);
+    --scroll-bg: #111111;
+  }
+
+  &.theme-dark {
+    --header-bg: #1d2d69;
+    --header-shadow: 0px 6px 18px 0px rgba(0, 0, 0, 0.15);
+    --header-text-color: #ffffff;
+    --skin-bg-color: #030d4c;
+
+    --menu-bg: #1d2d69;
+    --menu-header-bg: #1d53d9;
+    --menu-active-bg: #495787;
+    --menu-active-text-color: #ffffff;
+    --menu-text-color: #ffffff;
+
+    --layout-bg: #030d4c;
+    --cc-body-bg: #030d4c;
+    --cc-body-border: #0a0a0a;
+    --table-header-bg: #1378a4;
+    --table-bg: #030d4c;
+    --table-hover-bg: rgba(17, 28, 94);
+    --table-border-color: #030d4c;
+    --pagination-bg: #3d3e4a;
+    --scroll-color: rgba(255, 255, 255, 0.35);
+    --scroll-bg: #1d2d69;
+  }
+}

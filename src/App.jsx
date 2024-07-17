@@ -1,11 +1,10 @@
 import { Suspense } from 'react';
 import { useSelector } from 'react-redux';
-import { useRoutes, createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, createRoutesFromElements, Route, RouterProvider } from 'react-router-dom';
 import routerConfig from './router';
 
 import { Spin, ConfigProvider, theme } from 'antd';
 import locale from 'antd/locale/zh_CN.js';
-import './App.css';
 
 function App() {
   const skin = useSelector((state) => state.skin);

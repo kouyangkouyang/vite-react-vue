@@ -1,0 +1,62 @@
+.react-layout-style {
+  height: 100%;
+
+  .header-layout-style {
+    height: 50px;
+    padding: 0px;
+    background-color: var(--header-bg);
+    box-shadow: var(--header-shadow);
+    display: flex;
+    align-items: center;
+
+    .header-left {
+      display: flex;
+      align-items: center;
+      height: 100%;
+
+      .logo {
+        height: 100%;
+        width: 200px;
+        background-color: #2d53e8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+
+  .middle-layout-style {
+    background-color: var(--layout-bg);
+    height: calc(100% - 50px);
+
+    .ant-layout-sider {
+      background-color: var(--menu-bg);
+      height: 100%;
+
+      .ant-layout-sider-children {
+        overflow: hidden;
+        box-shadow: 0px 9px 12px 0px rgba(113, 117, 137, 0.15);
+      }
+    }
+
+    .content-layout-style {
+      flex: 1;
+      height: 100%;
+
+      .ant-layout-content {
+        width: 100%;
+        height: calc(100% - 30px);
+        padding: 16px;
+      }
+    }
+
+    .ant-layout-footer {
+      padding: 0px;
+      height: 30px;
+      background-color: var(--header-bg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
