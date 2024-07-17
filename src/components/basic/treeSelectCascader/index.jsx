@@ -1,6 +1,6 @@
-import { useState, useEffect } from "react";
-import { Select, Tree, message } from "antd";
-import "./index.scss";
+import { useState, useEffect } from 'react';
+import { Select, Tree, message } from 'antd';
+import './index.scss';
 
 const { Option } = Select;
 
@@ -8,9 +8,9 @@ const TreeSelectCascader = (props) => {
   const {
     treeData = [],
     defaultExpandAll = false,
-    fieldNames = { title: "title", key: "key", children: "children" },
-    placeholder = "请选择",
-    parentKey = "parentId",
+    fieldNames = { title: 'title', key: 'key', children: 'children' },
+    placeholder = '请选择',
+    parentKey = 'parentId',
     disabled = false,
     value = null,
     onChange = () => {},
@@ -56,7 +56,7 @@ const TreeSelectCascader = (props) => {
       });
     };
     loop(selectList);
-    setSelectName(_name.join("-") || null);
+    setSelectName(_name.join('-') || null);
   };
 
   useEffect(() => {
@@ -76,7 +76,7 @@ const TreeSelectCascader = (props) => {
   return (
     <>
       <Select
-        popupClassName="tree-select-cascader-style"
+        popupClassName='tree-select-cascader-style'
         placeholder={placeholder}
         value={selectName}
         open={selectOpen}
@@ -84,7 +84,7 @@ const TreeSelectCascader = (props) => {
         onClick={() => setSelectOpen(true)}
         onBlur={() => setSelectOpen(false)}
       >
-        <Option value="占位用">
+        <Option value='占位用'>
           {treeData?.length > 0 ? (
             <Tree
               treeData={treeData}
@@ -94,13 +94,8 @@ const TreeSelectCascader = (props) => {
               blockNode
               titleRender={(data) => {
                 return (
-                  <div
-                    className="tree-title"
-                    onClick={
-                      data?.disabled ? () => {} : (e) => onTreeSelect(data, e)
-                    }
-                  >
-                    {data?.[fieldNames.title] || "--"}
+                  <div className='tree-title' onClick={data?.disabled ? () => {} : (e) => onTreeSelect(data, e)}>
+                    {data?.[fieldNames.title] || '--'}
                   </div>
                 );
               }}

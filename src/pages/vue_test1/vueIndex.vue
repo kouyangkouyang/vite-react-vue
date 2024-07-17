@@ -10,7 +10,7 @@
 
 <script>
 export default {
-  name: "vue_test1",
+  name: 'vue_test1',
   data() {
     return {
       num: 0,

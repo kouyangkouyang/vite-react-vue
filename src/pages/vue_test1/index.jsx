@@ -1,6 +1,6 @@
-import React from "react";
-import VueComponent from "./vueIndex.vue";
-import { applyVueInReact } from "vuereact-combined";
+import React from 'react';
+import VueComponent from './vueIndex.vue';
+import { applyVueInReact } from 'vuereact-combined';
 
 let VueComponentInReact = applyVueInReact(VueComponent);
 
