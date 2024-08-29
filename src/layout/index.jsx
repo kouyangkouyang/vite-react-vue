@@ -13,6 +13,7 @@ const LayoutCom = () => {
   useEffect(() => {
     document.body.className = `theme-${skin}`;
   }, []);
+
   return (
     <Layout className='react-layout-style'>
       <Header className='header-layout-style'>

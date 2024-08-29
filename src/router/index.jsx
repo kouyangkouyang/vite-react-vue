@@ -9,12 +9,7 @@ const routers = [
     name: '平台路由',
     element: <Layout />,
     children: [
-      {
-        name: 'test1',
-        path: '/test1',
-        element: <pages.Test1 />,
-        children: [],
-      },
+      { name: 'test1', path: '/test1', element: <pages.Test1 />, children: [] },
       { name: 'test2', path: '/test2', element: <pages.Test2 />, children: [] },
       { name: 'vue-test1', path: '/vue-test1', element: <pages.VueTest1 />, children: [] },
     ],
